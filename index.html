@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <form id="formOne">
+        <!-- Name code -->
+        <div class="form-group">
+          <label for="inputName1">Name</label>
+          <input type="text" class="form-control" id="inputName1" aria-describedby="nameHelp" placeholder="Enter name">
+          <small id="nameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+        </div>
+        <!-- Food Code -->
+        <div class="form-group">
+          <label for="InputEmail1">Favorite Food</label>
+          <input type="text" class="form-control" id="Inputfood" aria-describedby="foodHelp" placeholder="What is your favorite food?">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <!-- Password code -->
+        <div class="form-group">
+          <label for="Inputssn">Password</label>
+          <input type="text" class="form-control" id="Inputssn" placeholder="Please enter your social security number ;)">
+        </div>
+        <!-- music code -->
+        <div class="form-group">
+          <label for="Inputmusic">Favorite Music</label>
+          <input type="text" class="form-control" id="Inputmusic" aria-describedby="musicHelp" placeholder="What is your favorite music?">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="iceCream">Favorite Ice Cream</label>
+          <select class="form-control" id="iceCream">
+            <option value="nothing"></option>
+            <option value="mntchp">Mint Chocolate Chip</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="berry">Marionberry Cheesecake</option>
+            <option value="vanilla">Vanilla</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="nsurvey">Did you like this survey?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="point" value="Yes">
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="point" value="No">
+              No
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="point" value="I don't care">
+              Picture of apathy
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="container-fluid" id="panels">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="panel panel-grab">
+            <div class="panel-heading">
+              <h3 class="panel-title">Name</h3>
+            </div>
+            <div class="panel-body">
+              <ul id="namepanel">
+                <!-- <li><span></span></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="panel panel-grab">
+            <div class="panel-heading">
+              <h3 class="panel-title">Food</h3>
+            </div>
+            <div class="panel-body">
+              <ul id="foodpanel"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="panel panel-grab">
+            <div class="panel-heading">
+              <h3 class="panel-title">Music</h3>
+            </div>
+            <div class="panel-body">
+              <ul id="musicpanel"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="panel panel-grab">
+            <div class="panel-heading">
+              <h3 class="panel-title">Ice Cream</h3>
+            </div>
+            <div class="panel-body" >
+              <ul id="icecreampanel">
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hello <span class="InputName1"></span> , -->
+
+     <!-- <button class="btn btn-primary" id="green">Say "hello"</button> -->
+  </body>
+</html>
