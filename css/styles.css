@@ -2,10 +2,25 @@
   background-color: green;
 } */
 
-#panels {
-  display: none
+/* #panels {
+  display: none;
+} */
+
+#formOne {
+  border: 5px solid #a2aab0;
+  padding: 20px;
+  background: #EBECED;
+  text: white;
 }
 
 ul{
   list-style: none;
+}
+
+.container-fluid {
+  display: none;
+  margin: 30px;
+  border: 2px solid black;
+  padding: 20px solid lightblue;
+  /* background-color:#4c586f; */
 }
